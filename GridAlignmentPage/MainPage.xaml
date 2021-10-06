@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="GridAlignmentPage.MainPage"
+ Title="Grid alignment demo">
+    
+    <Grid RowSpacing="0"
+     ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView Color="AliceBlue" />
+        <Label Text="Белый"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Column="1"
+                 Color="#E8E8E8" />
+        <Label Grid.Column="1"
+               Text="Серый"
+               HorizontalOptions="Center"
+               VerticalOptions="End"/>
+        <BoxView Grid.Column="2"
+                 Color="#CDCDCD" />
+        <Label Grid.Column="2"
+               Text="Серый"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="1"
+                 Color="#CFCFCF" />
+        <Label Grid.Row="1"
+               Text="Серый"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#A0A0A0" />
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="Серый"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="2"
+                 Color="#3F3F3F" />
+        <Label Grid.Row="1"
+               Grid.Column="2"
+               Text="Серый"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="2"
+                 Color="#828282" />
+        <Label Grid.Row="2"
+               Text="Серый"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="#292A2A" />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="Серый"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="Black" />
+        <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="Черный"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+    </Grid>
+</ContentPage>
